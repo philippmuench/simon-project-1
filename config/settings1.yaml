@@ -1,0 +1,27 @@
+samples:
+    S1:
+        - ngs/S1_R1.fastq.gz
+        - ngs/S1_R2.fastq.gz
+    S2:
+        - ngs/S2_R1.fastq.gz
+        - ngs/S2_R2.fastq.gz
+    S3:
+        - ngs/S3_R1.fastq.gz
+        - ngs/S3_R2.fastq.gz
+    S4:
+        - ngs/S4_R1.fastq.gz
+        - ngs/S4_R2.fastq.gz
+references:
+    S1: KB1_isolates.fasta
+    S2: KB1_isolates.fasta
+    S3: KB1_isolates.fasta
+    S4: KB1_isolates.fasta
+references_bowtie2:
+    S1: KB1_isolates
+    S2: KB1_isolates
+    S3: KB1_isolates
+    S4: KB1_isolates
+outdir: run_290322
+bed:
+maxdepth: 1000000
+mark_short_splits: true
