@@ -106,7 +106,6 @@ rule bwamem_align:
         "{{ bwa mem -x intractg {params.mark_short_splits} -t {threads}"
         " {input.reffa} {input.fq1} {input.fq2} |"
         " samtools fixmate - - |"
-        " samtools view -bq 1 |"
         " samtools sort -m 4g -o {output.bam} -T {output.bam}.tmp -; }} >& {log}" 
 
 rule bowtie2_align:
